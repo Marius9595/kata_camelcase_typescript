@@ -1,4 +1,4 @@
-export function camelcase_converter(text: string) {
+export function to_camel_case(text: string) {
 	if (text.length == 0) {
 		return '';
 	}
