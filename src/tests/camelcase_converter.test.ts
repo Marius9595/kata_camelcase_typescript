@@ -29,4 +29,8 @@ describe('CamelCase converter should', () => {
 	it('remove hyphens and underscores', () => {
 		expect(camelcase_converter('word-other_word')).toBe('WordOtherWord');
 	});
+
+	it('convert text into camelcase format', () => {
+		expect(camelcase_converter('this cat is from-other_world')).toBe('ThisCatIsFromOtherWorld');
+	});
 });
