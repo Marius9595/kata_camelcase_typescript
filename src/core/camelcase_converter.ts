@@ -1,3 +1,6 @@
 export function camelcase_converter(text: string) {
-	return '';
+	if (text.length == 0) {
+		return '';
+	}
+	return text;
 }
