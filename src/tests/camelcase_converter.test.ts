@@ -17,4 +17,8 @@ describe('CamelCase converter should', () => {
 	it('do nothing with text in camelcase format', () => {
 		expect(camelcase_converter('Foo')).toBe('Foo');
 	});
+
+	it('capitalize lowercase words', () => {
+		expect(camelcase_converter('word')).toBe('Word');
+	});
 });
