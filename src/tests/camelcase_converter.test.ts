@@ -23,6 +23,6 @@ describe('CamelCase converter should', () => {
 	});
 
 	it('remove spaces between words', () => {
-		expect(camelcase_converter('This Cat ')).toBe('ThisCat');
+		expect(camelcase_converter('This Cat')).toBe('ThisCat');
 	});
 });

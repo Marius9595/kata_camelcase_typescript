@@ -2,8 +2,8 @@ export function camelcase_converter(text: string) {
 	if (text.length == 0) {
 		return '';
 	}
-	if (text.toLowerCase() === text) {
-		return text.charAt(0).toUpperCase() + text.slice(1);
-	}
-	return text;
+	const words = text.split(' ').map((word) => {
+		return word.toLowerCase() === word ? word.charAt(0).toUpperCase() + word.slice(1) : word;
+	});
+	return words.reduce((previousValue, currentValue) => `${previousValue}${currentValue}`, '');
 }
