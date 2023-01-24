@@ -25,4 +25,8 @@ describe('CamelCase converter should', () => {
 	it('remove spaces between words', () => {
 		expect(camelcase_converter('This Cat')).toBe('ThisCat');
 	});
+
+	it('remove hyphens and underscores', () => {
+		expect(camelcase_converter('word-other_word')).toBe('WordOtherWord');
+	});
 });
