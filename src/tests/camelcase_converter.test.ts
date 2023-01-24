@@ -13,4 +13,8 @@ describe('CamelCase converter should', () => {
 	it('do nothing with empty entries', () => {
 		expect(camelcase_converter('')).toBe('');
 	});
+
+	it('do nothing with text in camelcase format', () => {
+		expect(camelcase_converter('Foo')).toBe('Foo');
+	});
 });
