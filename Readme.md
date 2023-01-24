@@ -1,12 +1,11 @@
-# Kata camelCase con Typescript
+# Kata camelCase with Typescript
 
-
-
+The program has to convert text, whose words delimited by hyphen, in camelCase format in PascalCase style
 
 ## Instrucciones
 * `npm install`
 * `npm test`
 
-Más información sobre el curso en [testingsostenible.com](https://testingsostenible.com).
+Check this course! [testingsostenible.com](https://testingsostenible.com).
 
 ![Testing Sostenible con TypeScript](cover.png)
